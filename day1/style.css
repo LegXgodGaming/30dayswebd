@@ -1,0 +1,236 @@
+ *{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root {
+    --main-color: rgb(36, 14, 14);
+}
+  
+
+html,body{
+Width:100%;
+Height:100%;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/05d8321febdbc4d6a08eed8855b2ff37.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-color: rgb(22, 21, 21);
+    Width:100%;
+    Height:100%;  
+}
+.page{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.1);
+    border-radius: 2%;
+    border: 2px solid  rgba(255, 255, 255,0.7);
+    backdrop-filter: blur(25px);   
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+}
+.page1{
+    padding: 0px 30px;
+    Width:100%;
+    Height:100vh;  
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+
+}
+.rightnav{
+    display: flex;
+    flex-direction: column;
+}
+.rightnav h4{
+    color:var(--main-color);
+    font-size: 1vw;
+
+
+
+}
+.rightnav h2 i{
+    color: var(--main-color);
+    font-size: 1.5vw;
+}
+.rightnav h2{
+    color: var(--main-color);
+    font-size: 2vw;
+}
+.leftnav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+    text-decoration: none;
+
+}
+.leftnav ul li{
+    text-decoration: none;
+    list-style: none;
+
+}
+.leftnav ul li a{
+    font-size: 1vw;
+    font-weight: 600;
+    color: var(--main-color) ;
+    text-decoration: none;
+
+}
+.leftnav ul button{
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding:  0.5vw 1vw;
+}
+.page1main{
+    display: flex;
+
+}
+.page1right h1{
+    margin: 1vw 0vw;
+    font-size: 6vw;
+    color: var(--main-color);
+}
+.page1right button{
+    margin: 3vw 4vw 2vw 0vw;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    padding:  1vw 3.5vw;
+    box-shadow: 1px 5px 20px var(--main-color);
+}
+.page1left{
+    
+    width: 49%;
+     margin-left: 2.8vw;
+    
+    
+}
+.page1left img {
+    width: 100%;
+    object-fit: cover;
+  
+    
+}
+.img1{
+    display: flex;
+    gap: 2vw;
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255,0.5) ;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.2vw;
+}
+.btn1:hover{
+    cursor:pointer;
+}
+@media screen and (max-width: 920px) {
+    .rightnav h4{
+        color:var(--main-color);
+        font-size: 3vw;
+    
+    
+    
+    }
+    .leftnav ul button{
+        color: white;
+        width: 15vw;
+        height: 10vw;
+        background-color: var(--main-color);
+        border-radius: 20px;
+        padding:  0.5vw 1vw;
+    }
+    .rightnav h2 i{
+        color: var(--main-color);
+        font-size: 5vw;
+    }
+    .rightnav h2{
+        color: var(--main-color);
+        font-size: 8vw;
+    }
+    .page1main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftnav ul li {
+        display: none; /* Hide the navbar ul */
+    }
+    
+    /* #links {
+        
+        display: none;
+    } */
+    .page1right h1{
+        margin: 10vw 0vw;
+        font-size: 10vw;
+        color: var(--main-color);
+    }
+    .test{
+        display: flex;
+        flex-direction: column;
+        margin: 20vw 0vw;
+        gap: 5vw;
+    }
+    .img2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255,0.5) ;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 1.2vw;
+    }
+
+    .page1right{
+        width: 100%;
+        height: 35vh;
+    }
+    .page1left{
+        width: 100%;
+        height: 50vh;
+    }
+   .page1right{
+    gap: 4vw;
+    display: flex;
+   }
+   .page1right button{
+    /* margin: 3vw 4vw 2vw 0vw; */
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    /* padding: 2px 2px; */
+    box-shadow: 1px 5px 20px var(--main-color);
+
+   }
+   .page1left{
+    /* width: 30vw;
+    height: 30vw; */
+    
+    width: 100%;
+     /* margin-left: 2.8vw; */
+    
+    
+}
+.page1left img {
+ 
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  
+    
+}
+}
