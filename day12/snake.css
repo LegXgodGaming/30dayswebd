@@ -1,0 +1,24 @@
+ *{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+Width:100%;
+Height:100%;
+}
+body {
+    background-color: rgb(152, 141, 141);
+    
+    text-align: center;
+}
+
+.score{
+   
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}

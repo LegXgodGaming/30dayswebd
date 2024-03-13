@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
+}
+
+html,body{
+Width:100%;
+Height:100%;
+overflow: hidden;
+}
+.main{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+
+.nav{
+   
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navitems{
+    display: flex;
+}
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+    
+}
+.navitems li a{
+    color: #3d535f;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navitems li a:hover{
+    color: #7f00ff;
+}
+.links a:hover{
+    color: #7f00ff;
+}
+.links a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+    text-decoration: none;
+
+}
+.wrapper{
+   
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object1 2s linear infinite ;
+}
+@keyframes object1{
+ 50%{
+    left: -13%;
+    top: 41%;
+ }
+}
+@keyframes object2{
+    50%{
+       left: 35%;
+       top: 10%;
+    }
+   }
+.wrapper::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object2 3s linear infinite ;
+}
+.cols0{
+    left: 110px;
+    top: 200px;
+    position: absolute;
+  
+}
+.cols1{
+    width: 40%;
+  }
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+
+
+}
+
+h1{
+    display: block;
+    font-size: 5em;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multitext{
+    color: #7f00ff;
+    text-transform: uppercase;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: .9em;
+    color: #3d535f;
+}
+
+.btns{
+    width:100%;
+    position: relative;
+    left: 150px;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    background-color:#3d535f ;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    background-color: #7f00ff ;
+
+}
+.imgbox {
+    left:800px ;
+    top: -100px;
+    position: absolute;
+    width: 550px;
+    height: 700px;
+    z-index: 999;
+    animation: animate 2s linear infinite;
+   
+}
+@keyframes animate{
+    /* 0%{
+        left: 800px;
+        top: -100px;
+    } */
+    50%{
+        left: 810px;
+        top: -90px;
+    }
+    /* 100%{
+        left: 800px;
+        top: -100px;
+    } */
+}
+.man{
+   
+    height: 700px;
+    object-fit: center;
+    overflow: hidden;
+    
+}
+.imgbox1{
+    left:700px ;
+    top: -70px;
+    position: absolute;
+    width: 550px;
+    height: 700px;
+    animation: animate1 2s linear infinite;
+   
+}
+@keyframes animate1{
+    /* 0%{
+        left: 800px;
+        top: -100px;
+    } */
+    50%{
+        left: 690px;
+        top: -65px;
+        width: 600px;
+        height: 800px;
+    }
+    /* 100%{
+        left: 800px;
+        top: -100px;
+    } */
+}
+
+#aaaa{
+    background: linear-gradient(45deg,#7f00ff);
+}
