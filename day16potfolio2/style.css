@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Lexend+Peta:wght@100..900&family=Libre+Barcode+128+Text&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ 
+ *{ 
+    /* overflow: hidden; */
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    
+Width:100%;
+Height:100%;
+background-color: #F6F8FA;
+}
+
+
+.main{
+    z-index: 99;
+}
+.nav{
+    z-index: 99;
+    gap: 25vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+   
+}
+.leftname h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5vw;
+
+}
+.rightname ul li a{
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.rightname ul li a:hover{
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(79, 47, 240);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.rightname ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    color: black;
+    list-style: none;
+    
+  }
+.mid{
+    display: flex;
+    justify-content: space-around;
+}
+.leftmid{
+    /* background-color: aqua; */
+    width: 35%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    gap: 1vw;
+}
+.rightmid{
+    /* background-color: rgb(65, 146, 146); */
+    width: 45%;
+    height: 90vh;
+
+}
+
+.leftmid h3{
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(111, 109, 109);
+  text-decoration: none;
+  font-weight: 500;
+
+}
+.line{
+    height: 0.4vh;
+    border-radius: 20px;
+    width: 4vw;
+    background-color: rgb(111, 109, 109) ;
+}
+.main2 h1{
+    font-family: "Playfair Display", serif;
+    font-size: 4vw;
+    font-weight: 700;
+}
+.main2 h2{
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(111, 109, 109);
+  font-size: 2vw;
+  font-weight: 500;
+
+}
+.main1{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.cont1{
+    gap: 1vw;
+ display: flex;
+}
+.cont2{
+    gap: 1vw;
+    display: flex;
+
+}
+.cont1 h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+   font-size: 1.5vw;
+   }
+.cont2 h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+       font-size: 1.5vw;
+   
+   }
+
+.cont1 i{
+    color: rgb(65, 65, 255);
+    font-size: 1.5vw;
+    }
+.cont2 i{
+    color: rgb(65, 65, 255);
+        font-size: 1.5vw;
+    
+    }
+.contact{
+    padding-top: 4vw
+}
+.circle{
+   margin-top: 3vw;
+    height: 85vh;
+    width: 40vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.circle img{
+    height: 85vh;
+    width: 40vw;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+
+
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+}
+.homee{
+    color: aqua;
+}
+/* .circle2{
+   
+    top: -10%;
+    right: -10%;
+    border-radius: 50%;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    background-color: rgb(194, 194, 194);
+} */
