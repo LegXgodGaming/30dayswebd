@@ -1,0 +1,238 @@
+/* this is link font google */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins' , sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: .4s linear;
+}
+
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(wall2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+body::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(wall.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  clip-path: circle(0% at 0 0);
+  transition: .5s linear;
+}
+body.active::after{
+  clip-path: circle(100% at 50% 0);
+}
+
+header {
+  content: '';
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+header .logo {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: slideRight .4s ease forwards;
+}
+
+header nav a {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 8px 18px;
+  transition: .3s ease;
+  z-index: 2;
+  opacity: 0;
+    animation: slideTop .4s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+header nav a:focus {
+  color: #000;
+}
+
+header nav a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 20px;
+  z-index: -1;
+  transition: .4s ease-in-out;
+  transform: scale(0);
+}
+
+header nav a:focus::after {
+  transform: scale(1);
+}
+
+ .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  animation: slideLeft .6s ease forwards;
+}
+
+ .btn:hover {
+  transform: scale(0.95);
+}
+
+ .btn:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.Home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .3);
+  text-align: center;
+}
+
+.Home .link a {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  border: solid 2px #fff;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: .3s ease;
+opacity: 0;
+animation: slideRight 1s ease forwards;
+animation-delay: calc(.3s * var(--i));
+
+}
+.Home .link a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.Home h1{
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #fff;
+  letter-spacing: 1;
+  margin-top: 30px;
+  opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: calc(1s);
+}
+
+.Home p {
+  font-size: 18px;
+  color: #eee;
+  margin: 20px 30px;
+  opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(1s);
+}
+.Home .btn{
+  background-color: #eee;
+  color: #000;
+    opacity: 0;
+      animation: slideRight 1s ease forwards;
+      animation-delay: calc(1s);
+}
+.Home .btn:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+@keyframes slideRight{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop{
+  0%{
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+@keyframes  slideLeft{
+  0%{
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+@keyframes  slidebottom{
+  0%{
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}

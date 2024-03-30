@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Lexend+Peta:wght@100..900&family=Libre+Barcode+128+Text&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+::selection{
+    color: white;
+    background-color: black;
+}
  
  *{ 
     /* overflow: hidden; */
@@ -16,10 +21,50 @@ Height:100%;
 background-color: #F6F8FA;
 }
 
-
-.main{
-    z-index: 99;
+.midname{
+    display: none;
 }
+.main{
+   width: 100%;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeside {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeleft {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
 .nav{
     z-index: 99;
     gap: 25vw;
@@ -28,6 +73,7 @@ background-color: #F6F8FA;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    animation: fadeIn 2s ease-out forwards;
    
 }
 .leftname h1{
@@ -35,7 +81,12 @@ background-color: #F6F8FA;
     color: black;
     font-weight: 900;
     font-size: 1.5vw;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 
+}
+.leftname h1:hover{
+    transform: scale(1.1);
 }
 .rightname ul li a{
 
@@ -43,6 +94,7 @@ background-color: #F6F8FA;
   color: black;
   text-decoration: none;
   font-weight: 500;
+  transition: transform 0.3s ease;
 }
 .rightname ul li a:hover{
 
@@ -50,6 +102,7 @@ background-color: #F6F8FA;
   color: rgb(79, 47, 240);
   text-decoration: none;
   font-weight: 500;
+  transform: scale(1.1);
 }
 
 .rightname ul li{
@@ -74,6 +127,8 @@ background-color: #F6F8FA;
     justify-content: center;
     padding-left: 5vw;
     gap: 1vw;
+    animation: fadeside 2s ease-out forwards;
+    
 }
 .rightmid{
     /* background-color: rgb(65, 146, 146); */
@@ -146,15 +201,16 @@ background-color: #F6F8FA;
     padding-top: 4vw
 }
 .circle{
+    animation: fadeleft 2s ease-out forwards;
    margin-top: 3vw;
-    height: 85vh;
+    height: 40vw;
     width: 40vw;
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
 }
 .circle img{
-    height: 85vh;
-    width: 40vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
@@ -179,3 +235,252 @@ background-color: #F6F8FA;
     z-index: -1;
     background-color: rgb(194, 194, 194);
 } */
+.textpart1{
+   
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10vw auto ;
+
+}
+.textpart1 h3{
+    font-weight: 400;
+    color: rgb(79, 47, 240);
+    font-size: 1vw;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+.textpart1 h1{
+    /* color: rgb(79, 47, 240); */
+    font-size: 3vw;
+    font-family: "Playfair Display", serif;
+}
+.textpart2{
+    gap: 4vw;
+    display: flex;
+    width: 80%;
+    margin: 10vw auto ;
+}
+.textpart4{
+    width: 40%;
+}
+.textpart3{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+
+.textpart3 h2{
+    font-weight: 400;
+    font-size: 1.3vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.textpart4 h1{
+    
+    font-size: 3vw;
+    font-family: "Playfair Display", serif;
+    color:  rgb(79, 47, 240);
+}
+.page3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    overflow-y: hidden;
+}
+.page3 h1{
+    margin-left: 9vw;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    font-family: "Playfair Display", serif;
+}
+.skill{
+    
+    margin-left: 9vw;
+    gap: 1vw;
+    display: flex;
+
+}
+.box{
+     width: 30%;
+     height: 50vh;
+     background-color: beige;
+     box-shadow: rgb(200, 198, 198) 2px 2px 20px 2px;
+}
+.page4{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    overflow-y: hidden;
+}
+.page4 h1{
+    margin-left: 9vw;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    font-family: "Playfair Display", serif;
+}
+.exp{
+    
+    margin-left: 9vw;
+    gap: 1vw;
+    display: flex;
+
+}
+.box{
+     width: 30%;
+     height: 50vh;
+     background-color: beige;
+     box-shadow: rgb(200, 198, 198) 2px 2px 20px 2px;
+}
+@media screen and (max-width: 900px) {
+    .leftname{
+       display: flex;
+      align-items: start;
+    }
+    .leftname h1{
+        
+        font-size: 5vw;
+    }
+    .rightname{
+        display: none;
+    }
+    .page3{
+        height:200vh;
+    }
+    .page4{
+        height:200vh;
+    }
+   .exp{
+    gap: 4vw;
+    margin: 0vw 10vw;
+    flex-direction: column;
+   }
+   .skill{
+    gap: 4vw;
+    margin: 0vw 10vw;
+    flex-direction: column;
+    
+   }
+   .box{
+    
+    width: 100%;
+   }
+   .mid{
+    flex-direction: column;
+   }
+   .rightmid{
+    /* overflow-y: hidden; */
+     margin: 0vw 6vw;
+     
+   }
+   .circle{
+    
+    width: 90vw;
+    height: 90vw;
+   }
+   .leftmid{
+    width: 100%;
+   }
+   .main2 h1{
+    font-family: "Playfair Display", serif;
+    font-size: 15vw;
+    font-weight: 700;
+}
+.main2 h2{
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(111, 109, 109);
+  font-size: 10vw;
+  font-weight: 500;
+
+}
+.main1 h3{
+    font-size: 4vw;
+    
+}
+.cont1 h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+   font-size: 3vw;
+   }
+.cont2 h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+       font-size: 3vw;
+   
+   }
+
+.cont1 i{
+    color: rgb(65, 65, 255);
+    font-size: 3vw;
+    }
+.cont2 i{
+    color: rgb(65, 65, 255);
+        font-size: 3vw;
+    
+    }
+    .textpart1{
+   
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 10vw auto ;
+    
+    }
+    .textpart1 h3{
+        font-weight: 400;
+        color: rgb(79, 47, 240);
+        font-size: 3vw;
+        font-family: "Barlow Semi Condensed", sans-serif;
+    }
+    .textpart1 h1{
+        /* color: rgb(79, 47, 240); */
+        font-size: 4vw;
+        font-family: "Playfair Display", serif;
+    }
+    .textpart2{
+        gap: 4vw;
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+        margin: 10vw auto ;
+    }
+    .textpart4{
+        width: 100%;
+    }
+    .textpart3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    
+    }
+    .page2{
+        height: 80vh;
+    }
+    
+    .textpart3 h2{
+        font-weight: 400;
+        font-size: 3vw;
+      font-family: "Barlow Semi Condensed", sans-serif;
+    }
+    .textpart4 h1{
+        
+        font-size: 3.5vw;
+        font-family: "Playfair Display", serif;
+        color:  rgb(79, 47, 240);
+    }
+    .midname{
+        display: flex;
+    }
+    .midname i{
+      font-size: 5vw;
+    }
+  
+}
+

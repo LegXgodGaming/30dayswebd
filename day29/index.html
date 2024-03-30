@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--add link file css-->
+  <link rel="stylesheet" href="style.css">
+  <!---add link font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">logo</h1>
+    <nav>
+      <a href="#" style="--i:1 ;">home</a>
+      <a href="#" style="--i: 2;">about</a>
+      <a href="#" style="--i:3 ;">product</a>
+      <a href="#" style="--i:4 ;">service</a>
+    </nav>
+    <a href="#" class="btn change-bg">change</a>
+  </header>
+  <section class="Home">
+    <div class="parent">
+
+      <div class="link">
+        <a href="#" style="--i:1;"><i class="fa-brands fa-github"></i></a>
+        <a href="#" style="--i:2;"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" style="--i:3;"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" style="--i:4;"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <h1>beautiful effect</h1>
+      <p>self-code is a channel for learning HTML, CSS,<br>
+      Javascript, Animated Personal Portfolio Website Design, <br>
+      Complete Responsive</p>
+
+      <a href="#" class="btn">subscribe</a>
+    </div>
+
+  </section>
+
+  <script>
+    let button = document.querySelector('.change-bg');
+    let body = document.querySelector('body');
+
+    button.onclick = () =>{
+      body.classList.toggle("active")
+    }
+  </script>
+</body>
+
+</html>

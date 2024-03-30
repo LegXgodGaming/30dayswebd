@@ -3,7 +3,7 @@
  
  
  *{ 
-    overflow: hidden;
+    overflow-x: hidden;
 Margin:0;
 Padding:0;
 Box-sizing: "Poppins", sans-serif;
@@ -13,11 +13,15 @@ Font-family: poppins;
 html,body{
 Width:100%;
 Height:100%;
-background-color: black;
+background-color: rgb(255, 255, 255);
+}
+::selection{
+    color: rgb(0, 0, 0);
 }
 
+
 .page1{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,7 +31,7 @@ background-color: black;
     pointer-events: none;
     font-weight: 800;
     font-size: 8vw;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 span{
@@ -54,4 +58,151 @@ span{
         transform: translate(-50%,-50%) scale(2);
     }
 }
+.page2{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.imgs{overflow: hidden;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    z-index: 1;
+   
+}
+.imgx{
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px #414141;
+    background-color: aquamarine;
+}
+.img1{
+    /* margin-top: 10vw; */
+    overflow: hidden;
+    width: 30vw;
+    height: 40vh;
+}
+.img2{
+    /* margin-bottom: 20vw; */
+    overflow: hidden;
+    width: 30vw;
+    height: 40vh;
+}
+.img3{
+    /* margin-top: 30vw; */
+    overflow: hidden;
+    width: 30vw;
+    height: 40vh;
+}
+.imgx img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.imgx:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.76);
+
+}
+.overlay{
+    z-index: 9;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+.overlay p{
+    transition: all ease 0.5s;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 50px;
+    font-size: 1.5vw;
+    opacity: 0;
+}
+.imgx:hover .overlay p{
+   opacity: 1;
+
+}
+.imgx:hover img{
+    scale: 1.1;
+    box-shadow: 0px 0px 50px #414141;
+
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.page3 h1{
+    
+    pointer-events: none;
+    font-weight: 800;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+}
+.nav{
+    z-index: 999;
+    gap: 25vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+   
+}
+.leftname{
+
+    z-index: 999;
+}
+.leftname h1{
+    z-index: 999;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5vw;
+
+}
+.rightname ul li a{
+    z-index: 999;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.rightname ul li a:hover{
+    z-index: 999;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(79, 47, 240);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.rightname ul li{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    color: black;
+    list-style: none;
+    
+  }
+
+
 
